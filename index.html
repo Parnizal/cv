@@ -1,47 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - CV</title>
+    <title>CV - İsmail Ertürk</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Your Name</h1>
-        <p>Title / Profession</p>
+        <h1>İsmail Ertürk</h1>
+        <p>Email: erturk.trk.34@gmail.com | Telefon: 05312270234</p>
+        <hr>
     </header>
     
-    <section>
-        <h2>Contact Information</h2>
+    <section id="hakkinda">
+        <h2>Hakkında</h2>
+        <p>Adım İsmail, 2001 yılında Adıyaman'da doğdum. 15 yıl İstanbul'da yaşadım, şu an üniversitede biyoloji okuyorum.</p>
+    </section>
+    
+    <section id="egitim">
+        <h2>Eğitim</h2>
         <ul>
-            <li>Email: your.email@example.com</li>
-            <li>Phone: +123456789</li>
-            <li>GitHub: <a href="https://github.com/YourUsername">YourUsername</a></li>
+            <li><strong>Toki Kayaşehir Meslek Teknik Anadolu Lisesi</strong>, Muhasebe/Dış Ticaret - 2019</li>
+            <li><strong>Bursa Uludağ Üniversitesi</strong>, Biyoloji - Devam Ediyor</li>
         </ul>
     </section>
 
-    <section>
-        <h2>Education</h2>
-        <p>Bachelor's Degree in X, University Y, Year</p>
-    </section>
-
-    <section>
-        <h2>Work Experience</h2>
-        <p>Position, Company, Year</p>
-    </section>
-
-    <section>
-        <h2>Skills</h2>
+    <section id="deneyim">
+        <h2>İş Deneyimi</h2>
         <ul>
-            <li>Skill 1</li>
-            <li>Skill 2</li>
-            <li>Skill 3</li>
+            <li><strong>Hıdır Adsay Serbest Muhasebeci Mali Müşavir</strong>, Muhasebe Stajyeri - 3 ay</li>
+            <li><strong>İmprogen Diagnostik</strong>, Üretim Elemanı - 1.5 yıl</li>
+        </ul>
+    </section>
+
+    <section id="yetkinlikler">
+        <h2>Yetenekler</h2>
+        <ul>
+            <li>İyi düzey bilgisayar kullanımı</li>
+            <li>Orta düzey İngilizce</li>
+            <li>Giriş düzeyi Almanca</li>
+        </ul>
+    </section>
+
+    <section id="ilgi-alanlari">
+        <h2>İlgi Alanları</h2>
+        <ul>
+            <li>Kitap Okumak</li>
+            <li>Araştırma Yapmak</li>
+            <li>Tenis Oynamak</li>
+            <li>Dijital Fotoğraf Üretmek</li>
         </ul>
     </section>
 
     <footer>
-        <p>© 2024 Your Name</p>
+        <p>Tarih: <span id="tarih"></span></p>
     </footer>
+
+    <script>
+        document.getElementById('tarih').innerText = new Date().toLocaleDateString();
+    </script>
 </body>
 </html>
